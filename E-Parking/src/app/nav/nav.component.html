@@ -1,0 +1,30 @@
+<head>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+<body>
+<header class="p-1 text-black">
+  <div>
+    <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+      <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-black text-decoration-none me-lg-5">
+        <img src="assets/logo4.jpg">
+      </a>
+      <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+        <li><a [routerLink]="['home']" class="nav-link px-2 text-black">Home</a></li>
+        <li><a [routerLink]="['aboutus']" class="nav-link px-2 text-black">About</a></li>
+        <li><a [routerLink]="['book']" class="nav-link px-2 text-black">Booking</a></li>
+        
+      </ul>
+      <div class="dropdown">
+        <button class="dropbtn">Dropdown</button>
+        <div class="dropdown-content">
+          <a href="" [routerLink]="['/admin']">Admin</a>
+          <a href="" [routerLink]="['/serviceprovider']">Service Provider</a>
+          <a href="" [routerLink]="['/customer']">Customer</a>
+      
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+</body>
